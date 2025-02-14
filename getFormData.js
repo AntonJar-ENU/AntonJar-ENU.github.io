@@ -1,4 +1,4 @@
-function readForm() {
+window.readForm = function() {
     let fname = document.getElementById("fname").value;
     setCookie("firstName",fname,1);
 
