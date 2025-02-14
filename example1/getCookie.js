@@ -34,6 +34,7 @@ function readForm()
     showQuestion();
 }
 
+
 function showQuestion()
 {
     var prompt = 'Hi ' + getCookie("firstName") + ' are you happy?';
