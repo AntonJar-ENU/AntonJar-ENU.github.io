@@ -31,6 +31,7 @@ function readForm()
     let fname = document.getElementById("fname").value;
     setCookie("firstName",fname,1);
 
+    showQuestion();
 }
 
 function showQuestion()
