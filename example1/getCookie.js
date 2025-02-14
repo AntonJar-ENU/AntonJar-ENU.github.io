@@ -31,6 +31,14 @@ function readForm()
     let fname = document.getElementById("fname").value;
     setCookie("firstName",fname,1);
 
-    let alertName = getCookie("firstName");
-    alert('Hi ' + alertName);
+}
+
+function showQuestion()
+{
+    var prompt = 'Hi ' + getCookie("firstName") + ' are you happy?';
+    if (confirm(prompt)) {
+        alert('Happy to hear!');
+    } else {
+        alert('Sorry to hear');
+    }
 }
