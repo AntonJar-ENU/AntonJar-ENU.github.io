@@ -30,13 +30,7 @@ function readForm()
 {
     let fname = document.getElementById("fname").value;
     setCookie("firstName",fname,1);
-
-    showQuestion();
-}
-
-
-function showQuestion()
-{
+    
     var prompt = 'Hi ' + getCookie("firstName") + ' are you happy?';
     if (confirm(prompt)) {
         alert('Happy to hear!');
@@ -44,3 +38,4 @@ function showQuestion()
         alert('Sorry to hear');
     }
 }
+
