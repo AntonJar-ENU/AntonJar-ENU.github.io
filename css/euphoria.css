@@ -25,23 +25,32 @@ body{
     width: 100%;
 }
 
-#top-menu li{
+.menu-items {
     list-style:none;
-    padding: .4em; 
-    align-items: center; 
-    height: 50px;
-    
-}
-
-#top-menu a{
-    height: 100%;
-    text-decoration:none;
+    padding: 0 .5em; 
     display: flex;
     align-items: center;
-    color: #68565A;
-    padding: 0 .2em;
+
 }
 
-nav a:hover{
+.menu-items a{
+    height: 100%;
+    text-decoration:none;
+    color: #68565A;
+    padding: 1em;
+}
+
+.menu-items a:hover{
     background-color: darkgrey;
+    color:black;
+  
+}
+
+/* Footer */
+footer {
+    display: flex;
+    font-size: 10px;
+    background-color: lightgray;
+    width: 100%;
+    align-items: center;
 }
