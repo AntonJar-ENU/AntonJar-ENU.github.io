@@ -7,6 +7,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*Media Settings*/
+@media (max-width: 400px) {
+
+    .home-page-container {
+        display:block;
+    }
+}
+
+body {
+    background-color: coral;
+}
 body p{
     font-size: small;
 }
@@ -24,7 +35,7 @@ body h1{
 
 #top-menu{
     display: flex;
-    background-color:lightgray;
+    background-color: lightgray;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
     width: 100%;
     margin-bottom: 20px;
@@ -70,14 +81,18 @@ body h1{
 .home-page-container article{
     border: 1px black solid;
     min-height: 200px;
+    background-color: aquamarine;
+
 }
 
 .home-page-container section{
-    border: 1px black solid;
+    
     border-radius: 20px;
     padding: 5px;
     min-height: 200px;
     max-height:200px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+    background-color: burlywood;
 }
 
 #home-feature {
