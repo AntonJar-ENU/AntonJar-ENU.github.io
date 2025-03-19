@@ -2,7 +2,8 @@
 // Mat#: 40690620
 // Purpose: Adds content to the Navigation Bar
 
-const navBar = document.getElementById("top-menu")
+//const navBar = document.getElementById("top-menu")
+const navBar = document.querySelector("nav");
 const imgLogo = document.createElement("img");
 imgLogo.src = "images/euphoria-logo.png";
 imgLogo.className = "logo";
@@ -15,7 +16,7 @@ const menuLinks = [
     {text: "Classes", link: "classes.html"},
     {text: "Learn", link: "learn.html"},
     {text: "Fees", link: "fees.html"},
-    {text: "About Us", link: "about-us.html"},
+    {text: "About", link: "about-us.html"},
     {text: "Contact", link: "contact.html"}
 ]
 
