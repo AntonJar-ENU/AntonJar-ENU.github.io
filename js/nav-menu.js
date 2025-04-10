@@ -35,5 +35,22 @@ menuLinks.forEach(item => {
     li.appendChild(a);
     ul.appendChild(li);
   
+});
 
+// Load Menu Items into Side Menu for Smaller Screens
+const sideBar = document.querySelector(".side-nav");
+const ulSide= document.createElement("ul");
+ulSide.className = "side-menu-items";
+sideBar.appendChild(ulSide);
+
+menuLinks.forEach(item => {
+    let liSide = document.createElement("li");
+    let aSide = document.createElement("a");
+
+    aSide.textContent = item.text;
+    aSide.href=item.link;
+
+    liSide.appendChild(aSide);
+    ulSide.appendChild(liSide);
+  
 });
