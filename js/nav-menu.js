@@ -4,21 +4,14 @@
 
 //const navBar = document.getElementById("top-menu")
 const navBar = document.querySelector("nav");
+
 const imgLogo = document.createElement("img");
 imgLogo.src = "images/euphoria-logo.png";
 imgLogo.className = "logo";
 navBar.appendChild(imgLogo);
 
 // Create Menu Items in array
-const menuLinks = [
-    {text: "Home", link: "home.html"},
-    {text: "Events", link: "events.html"},
-    {text: "Classes", link: "classes.html"},
-    {text: "Learn", link: "learn.html"},
-    {text: "Fees", link: "fees.html"},
-    {text: "About", link: "about-us.html"},
-    {text: "Contact", link: "contact.html"}
-]
+const menuLinks = getMenuItems();
 
 const ul = document.createElement("ul");
 ul.className ="menu-items";
@@ -54,3 +47,16 @@ menuLinks.forEach(item => {
     ulSide.appendChild(liSide);
   
 });
+
+// Menu Items that are loaded to the Nav bars
+function getMenuItems() {
+    return [
+        {text: "Home", link: "home.html"},
+        {text: "Events", link: "events.html"},
+        {text: "Classes", link: "classes.html"},
+        {text: "Learn", link: "learn.html"},
+        {text: "Fees", link: "fees.html"},
+        {text: "About", link: "about-us.html"},
+        {text: "Contact", link: "contact.html"}
+    ]
+}
