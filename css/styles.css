@@ -59,7 +59,6 @@
 .side-menu-items {
     list-style: none;
     padding-top: .90em;
-
 }
 
 
@@ -69,7 +68,6 @@
     text-decoration: none;
     color: #68565A;
     padding: .5em;
-
 }
 
 .side-nav a:hover{
@@ -166,6 +164,28 @@ body {
 
 .highlight-content:nth-of-type(3) {
     background-image: url('../images/content/events-image.jpg');
+}
+
+/* Event Calendar Image*/
+
+.event-calendars {
+    display:flex;
+    flex: 1;
+
+}
+
+.event-calendar-image {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Embedded Event Calendar*/
+.event-calendar {
+    width: 50%;    margin: 5px;
+
+    display: block;
+    margin: 0 auto;
 }
 
 /* Adjustments for Responsive Design*/
