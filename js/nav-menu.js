@@ -3,7 +3,7 @@
 // Purpose: Adds content to the Navigation Bar
 
 //const navBar = document.getElementById("top-menu")
-const navBar = document.querySelector("nav");
+const navBar = document.querySelector(".top-nav");
 
 const imgLogo = document.createElement("img");
 imgLogo.src = "images/euphoria-logo.png";
