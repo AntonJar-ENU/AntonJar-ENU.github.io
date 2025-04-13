@@ -98,6 +98,7 @@ body {
 
   .content {
     flex: 1 0 auto;
+    margin: 0 auto;
   }
 
   /*HOME PAGE STYLING*/
@@ -166,26 +167,27 @@ body {
     background-image: url('../images/content/events-image.jpg');
 }
 
+
 /* Event Calendar Image*/
 
 .event-calendars {
     display:flex;
+    flex-direction: column;
     flex: 1;
+    width:100%;
+    min-width: 400px;
+    max-width: 600px;
+    gap: 20px;
 
 }
 
-.event-calendar-image {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-}
 
 /* Embedded Event Calendar*/
 .event-calendar {
-    width: 50%;    margin: 5px;
 
-    display: block;
-    margin: 0 auto;
+    height: 350px;
+    
+   
 }
 
 /* Adjustments for Responsive Design*/
