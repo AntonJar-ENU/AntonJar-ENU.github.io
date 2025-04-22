@@ -94,15 +94,15 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 400px;
-  }
+}
 
-  .content {
+.content {
     flex: 1 0 auto;
     margin: 0 auto;
-  }
+}
 
-  /*HOME PAGE STYLING*/
-  .home-feature {
+/*HOME PAGE STYLING*/
+.home-feature {
     display: flex;
     align-items: flex-start; 
     width: 90%;
@@ -186,8 +186,42 @@ body {
 .event-calendar {
 
     height: 350px;
+
+}
+
+/* Table Styling*/
+table {
+    width:100%;
     
-   
+}
+
+th, caption {
+    text-align: left;
+}
+
+caption {
+    font-size:1.2rem;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+
+th{
+    padding: .2rem;
+    font-size: 1rem;
+}
+
+td {
+    padding: .2rem;
+}
+
+
+.tb-subhead {
+    background-color:blueviolet;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    
 }
 
 /* Adjustments for Responsive Design*/
@@ -207,5 +241,33 @@ body {
     /* Hide Horizontal nav bar menu items*/
     .menu-items {
         display: none;
+    }
+    
+}
+
+/* Adjustments for Table */
+@media(max-width:600px) {
+    th{
+        display:none;
+    }
+
+    td{
+        display:block;
+    }
+
+  
+
+    td:last-child{
+        padding-bottom: 1rem;
+    }
+
+    td::before {
+        content: attr(data-cell) ": ";
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    tr {
+        pa
     }
 }
