@@ -96,9 +96,18 @@ body {
     min-width: 400px;
 }
 
+article {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
 .content {
     flex: 1 0 auto;
     margin: 0 auto;
+}
+
+.text-list {
+    padding-left: 40px;
 }
 
 /*HOME PAGE STYLING*/
