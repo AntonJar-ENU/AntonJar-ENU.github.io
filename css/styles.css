@@ -192,7 +192,6 @@ body {
 /* Table Styling*/
 table {
     width:100%;
-    
 }
 
 th, caption {
@@ -200,31 +199,25 @@ th, caption {
 }
 
 caption {
-    font-size:1.2rem;
+    font-size:1.1rem;
     font-weight: bold;
     text-transform:uppercase;
+    padding-top: 1rem;
+    padding-bottom:1rem;
 }
-
 
 th{
     padding: .2rem;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 td {
     padding: .2rem;
+    border-bottom: 1px solid rgb(153, 153, 155);
 }
 
 
-.tb-subhead {
-    background-color:blueviolet;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    
-}
-
-/* Adjustments for Responsive Design*/
+/* Adjustments for Screen Responsive Design*/
 @media (max-width: 800px) {
 
     /* Change orientation of page to columns*/
@@ -242,32 +235,52 @@ td {
     .menu-items {
         display: none;
     }
+
+    table,
+    caption
+    {
+        padding-left: 1rem;;
+    }
+
+    p {
+        padding-left: 1rem;
+    }
     
 }
 
-/* Adjustments for Table */
-@media(max-width:600px) {
+/* Adjustments for Table Responsive Design */
+@media(max-width:700px) {
+
+
     th{
         display:none;
     }
 
     td{
-        display:block;
+        display:grid;
+        grid-template-columns: 10ch auto;
     }
-
-  
 
     td:last-child{
         padding-bottom: 1rem;
     }
 
     td::before {
-        content: attr(data-cell) ": ";
         font-weight: bold;
         text-transform: capitalize;
     }
 
-    tr {
-        pa
+    td:nth-of-type(1)::before {
+        content: "service: ";
     }
+
+    td:nth-of-type(2)::before {
+        content: "rate: ";
+    }
+
+    td:nth-of-type(3)::before {
+        content: "details: ";
+    }
+
+
 }
