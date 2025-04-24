@@ -228,16 +228,17 @@ td {
 
 /* FAQ Content Styling*/
 .faq-container{
-    max-width: 80%;
+    width:100%;
     margin: auto;
 }
+
 
 .faq-question{
     background-color: white;
     cursor: pointer;
     font-size: 1.3rem;
     width: 100%;
-    padding: 2rem 2.5rem;
+    padding: 1rem 1.5rem;
     border: none;
     display: flex;
     justify-content: space-between;
@@ -254,6 +255,7 @@ td {
 .faq-active,
 .faq-question:hover {
     background-color: bisque;
+    transition:0.5s;
 }
 
 .faq-answer{
@@ -261,8 +263,13 @@ td {
     background-color:bisque;
     display:none;
     overflow: hidden;
-    padding: 0 2rem 2.5rem 2rem;
-    
+    padding: 1rem, 1.5rem;
+    overflow: hidden;
+
+}
+
+.faq-answer.show{
+    display:block;
 }
 
 .faq-answer p {
