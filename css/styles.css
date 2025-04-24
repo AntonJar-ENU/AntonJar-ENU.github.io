@@ -209,15 +209,15 @@ th, caption {
 
 caption {
     font-size:1.1rem;
-    font-weight: bold;
+    font-weight:bold;
     text-transform:uppercase;
     padding-top: 1rem;
     padding-bottom:1rem;
 }
 
 th{
-    padding: .2rem;
-    font-size: .8rem;
+    padding:.2rem;
+    font-size:.8rem;
 }
 
 td {
@@ -225,6 +225,56 @@ td {
     border-bottom: 1px solid rgb(153, 153, 155);
 }
 
+
+/* FAQ Content Styling*/
+.faq-container{
+    max-width: 80%;
+    margin: auto;
+}
+
+.faq-question{
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.faq-question i{
+    font-size: 1rem;
+}
+
+/* faq-active is used in JS */
+.faq-active,
+.faq-question:hover {
+    background-color: bisque;
+}
+
+.faq-answer{
+    padding: 0 20px;
+    background-color:bisque;
+    display:none;
+    overflow: hidden;
+    padding: 0 2rem 2.5rem 2rem;
+    
+}
+
+.faq-answer p {
+    color: rgba(0,0,0, 0.5);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.faq-item {
+    border: 1px solid rgba(0,0,0, 0.2);
+    margin: 10px 0;
+}
 
 /* Adjustments for Screen Responsive Design*/
 @media (max-width: 800px) {
@@ -274,6 +324,7 @@ td {
         padding-bottom: 1rem;
     }
 
+    /*Apply a label before the Content of Cell when collapsed*/
     td::before {
         font-weight: bold;
         text-transform: capitalize;
