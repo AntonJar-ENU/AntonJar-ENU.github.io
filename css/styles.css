@@ -226,11 +226,65 @@ td {
 }
 
 
+/* CONTACT US STYLING*/
+
+form {
+    padding: 20px;
+
+}
+#form-row{
+    display:flex;
+    align-items: top;
+    margin-bottom: 1rem;
+}
+
+
+input {
+    width: 70%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+input:focus-within{
+    outline:none;
+    background-color: antiquewhite;
+}
+
+textarea {
+    width: 70%;
+    font-size: 15px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+textarea:focus-within{
+    outline:none;
+    background-color: antiquewhite;
+}
+
+button {
+    background-color: purple;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: .5rem;
+    text-align: center;
+    color: white;
+}
+
+button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
 /* FAQ Content Styling*/
 .faq-container{
     width:100%;
     margin: auto;
 }
+
 
 
 .faq-question{
