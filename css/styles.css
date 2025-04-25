@@ -94,6 +94,15 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 400px;
+
+}
+
+p {
+    padding-left: 1rem;
+}
+
+h1{
+    padding-left: 1rem;
 }
 
 article {
@@ -108,6 +117,7 @@ audio {
 .content {
     flex: 1 0 auto;
     margin: 0 auto;
+
 }
 
 .text-list {
@@ -285,15 +295,19 @@ textarea:focus-within{
 
 /* FAQ Content Styling*/
 .faq-container{
-    width:100%;
+    min-width:80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .faq-question{
     background-color:#743694;
     cursor: pointer;
     font-size: 1.3rem;
-    width: 100%;
+    min-width: 100%;
     padding: 1rem 1.5rem;
     border: none;
     display: flex;
@@ -319,14 +333,14 @@ textarea:focus-within{
     padding: 0 20px;
     background-color: #5dade2 ;
     display:none;
-    overflow: hidden;
+    overflow:hidden;
     padding: 1rem, 1.5rem;
-    overflow: hidden;
 
 }
 
 .faq-answer.show{
     display:block;
+
 }
 
 .faq-answer p {
@@ -337,11 +351,17 @@ textarea:focus-within{
 
 .faq-item {
     border: 1px solid rgba(0,0,0, 0.2);
-    margin: 10px 0;
+    margin: 10px auto;
+    width:80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 /* Adjustments for Screen Responsive Design*/
-@media (max-width: 800px) {
+@media (max-width:800px) {
 
     /* Change orientation of page to columns*/
     .home-feature {
@@ -385,7 +405,7 @@ textarea:focus-within{
     }
 
     td:last-child{
-        padding-bottom: 1rem;
+        padding-bottom:1rem;
     }
 
     /*Apply a label before the Content of Cell when collapsed*/
