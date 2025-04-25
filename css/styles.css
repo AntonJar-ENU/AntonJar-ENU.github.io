@@ -101,6 +101,10 @@ article {
     padding-left: 1rem;
 }
 
+audio {
+    margin-top: 1rem;
+}
+
 .content {
     flex: 1 0 auto;
     margin: 0 auto;
@@ -265,7 +269,7 @@ textarea:focus-within{
     background-color: antiquewhite;
 }
 
-button {
+.submit-button {
     background-color: purple;
     border-radius: 20px;
     font-size: 20px;
@@ -274,7 +278,7 @@ button {
     color: white;
 }
 
-button:hover{
+.submit-button:hover{
     opacity: 80%;
     cursor: pointer;
 }
@@ -285,10 +289,8 @@ button:hover{
     margin: auto;
 }
 
-
-
 .faq-question{
-    background-color: white;
+    background-color:#743694;
     cursor: pointer;
     font-size: 1.3rem;
     width: 100%;
@@ -298,7 +300,7 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-
+    color: #EEEEEE;
 }
 
 .faq-question i{
@@ -308,13 +310,14 @@ button:hover{
 /* faq-active is used in JS */
 .faq-active,
 .faq-question:hover {
-    background-color: bisque;
+    background-color: #5dade2 ;
     transition:0.5s;
+    color: #333333;
 }
 
 .faq-answer{
     padding: 0 20px;
-    background-color:bisque;
+    background-color: #5dade2 ;
     display:none;
     overflow: hidden;
     padding: 1rem, 1.5rem;
@@ -327,7 +330,7 @@ button:hover{
 }
 
 .faq-answer p {
-    color: rgba(0,0,0, 0.5);
+    color: rgba(0,0,0, 0.7);
     font-size: 1rem;
     line-height: 1.4;
 }
