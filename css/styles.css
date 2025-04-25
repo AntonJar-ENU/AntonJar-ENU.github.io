@@ -102,7 +102,15 @@ p {
 }
 
 h1{
+    text-align: center;
     padding-left: 1rem;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+h2 {
+    padding-left: 1rem;
+    font-size: 1.5rem;
 }
 
 article {
@@ -303,6 +311,17 @@ textarea:focus-within{
 
 }
 
+.faq-container > p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.faq-container > h1{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
 .faq-question{
     background-color:#743694;
     cursor: pointer;
@@ -330,8 +349,8 @@ textarea:focus-within{
 }
 
 .faq-answer{
-    padding: 0 20px;
-    background-color: #5dade2 ;
+    padding: 20px 20px;
+    background-color: #5dade29d ;
     display:none;
     overflow:hidden;
     padding: 1rem, 1.5rem;
@@ -353,7 +372,7 @@ textarea:focus-within{
     border: 1px solid rgba(0,0,0, 0.2);
     margin: 10px auto;
     width:80%;
-    max-width: 600px;
+    max-width:600px;
     display: flex;
     flex-direction: column;
 
