@@ -98,7 +98,7 @@ body {
 }
 
 p {
-    padding-left: 1rem;
+    padding: 1rem;
 }
 
 h1{
@@ -235,11 +235,13 @@ caption {
     text-transform:uppercase;
     padding-top: 1rem;
     padding-bottom:1rem;
+    background-color: #748ad3;
 }
 
 th{
     padding:.2rem;
     font-size:.8rem;
+    background-color: aliceblue;
 }
 
 td {
@@ -407,6 +409,7 @@ textarea:focus-within{
 
     p {
         padding-left: 1rem;
+        padding-right: 1rem;
     }
     
 }

@@ -5,6 +5,7 @@
 //const navBar = document.getElementById("top-menu")
 const navBar = document.querySelector(".top-nav");
 
+// insert logo image
 const imgLogo = document.createElement("img");
 imgLogo.src = "images/euphoria-logo.png";
 imgLogo.className = "logo";
@@ -29,6 +30,10 @@ menuLinks.forEach(item => {
     ul.appendChild(li);
   
 });
+
+// add a Div to hold the Icon for mobile Mode
+//const burgerMenu = document.createElement("div");
+
 
 // Load Menu Items into Side Menu for Smaller Screens
 const sideBar = document.querySelector(".side-nav");
