@@ -254,9 +254,11 @@ form {
     padding: 20px;
 
 }
+
 #form-row{
     display:flex;
-    align-items: top;
+    align-items: flex-start;
+    justify-content: center;
     margin-bottom: 1rem;
 }
 
@@ -287,6 +289,7 @@ textarea:focus-within{
     background-color: antiquewhite;
 }
 
+
 .submit-button {
     background-color: purple;
     border-radius: 20px;
@@ -294,10 +297,11 @@ textarea:focus-within{
     padding: .5rem;
     text-align: center;
     color: white;
+
 }
 
 .submit-button:hover{
-    opacity: 80%;
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -308,6 +312,7 @@ textarea:focus-within{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -343,7 +348,7 @@ textarea:focus-within{
 /* faq-active is used in JS */
 .faq-active,
 .faq-question:hover {
-    background-color: #5dade2 ;
+    background-color: #5dade2;
     transition:0.5s;
     color: #333333;
 }
@@ -353,8 +358,6 @@ textarea:focus-within{
     background-color: #5dade29d ;
     display:none;
     overflow:hidden;
-    padding: 1rem, 1.5rem;
-
 }
 
 .faq-answer.show{
@@ -380,7 +383,7 @@ textarea:focus-within{
 }
 
 /* Adjustments for Screen Responsive Design*/
-@media (max-width:800px) {
+@media all and (max-width: 800px) {
 
     /* Change orientation of page to columns*/
     .home-feature {
@@ -394,14 +397,12 @@ textarea:focus-within{
     }
 
     /* Hide Horizontal nav bar menu items*/
-    .menu-items {
-        display: none;
-    }
+    .menu-items {display: none;}
 
     table,
     caption
     {
-        padding-left: 1rem;;
+        padding-left: 1rem;
     }
 
     p {
@@ -411,21 +412,17 @@ textarea:focus-within{
 }
 
 /* Adjustments for Table Responsive Design */
-@media(max-width:700px) {
+@media all and (max-width: 700px) {
 
 
-    th{
-        display:none;
-    }
+    th{display: none;}
 
     td{
         display:grid;
         grid-template-columns: 10ch auto;
     }
 
-    td:last-child{
-        padding-bottom:1rem;
-    }
+    td:last-child{padding-bottom:1rem;}
 
     /*Apply a label before the Content of Cell when collapsed*/
     td::before {
