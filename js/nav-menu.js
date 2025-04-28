@@ -45,6 +45,13 @@ burgerIcon.innerHTML = `
 
 navBar.appendChild(burgerIcon);
 
+// add a toggle to the side nav for opening and closing
+const sideNav = document.querySelector(".side-nav");
+burgerIcon.addEventListener("click", function() {
+    sideNav.classList.toggle("open");
+});
+
+
 // Load Menu Items into Side Menu for Smaller Screens
 const sideBar = document.querySelector(".side-nav");
 const ulSide= document.createElement("ul");

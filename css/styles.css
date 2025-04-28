@@ -56,14 +56,19 @@
 .side-nav {
     position:fixed;
     top:0;
-    right:0;
+    right:-250px;
+    width: 250px;
     height: 100vh;
-    width: 80vw;
     background-color: rgba(197, 196, 196, 0.233);
     backdrop-filter: blur(5px);
     font-size: 1.2em;
-    display:none;
+    transition: right 0.3s ease;
+    z-index:1000;
 
+}
+
+.side-nav.open {
+    right:0;
 }
 
 .side-menu-items {
