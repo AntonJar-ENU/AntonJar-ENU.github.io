@@ -41,6 +41,16 @@
     color:black;
 }
 
+/* Show the burger icon */
+.mobile-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    display:none;
+}
+
 
 /* SIDE NAVIGATION BAR STYLING */
 .side-nav {
@@ -386,6 +396,10 @@ textarea:focus-within{
 
 /* Adjustments for Screen Responsive Design*/
 @media all and (max-width: 800px) {
+
+    .mobile-icon {
+        display:flex;
+    }
 
     /* Change orientation of page to columns*/
     .home-feature {

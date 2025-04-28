@@ -31,9 +31,19 @@ menuLinks.forEach(item => {
   
 });
 
-// add a Div to hold the Icon for mobile Mode
-//const burgerMenu = document.createElement("div");
+// BURGER MENU
+// create a div for the burger icon
+const burgerIcon = document.createElement("div");
+burgerIcon.className = "mobile-icon";
 
+// parameters for the Burger Menu Icon
+burgerIcon.innerHTML = `
+<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="24px" fill="#00000">
+  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+</svg>
+`;
+
+navBar.appendChild(burgerIcon);
 
 // Load Menu Items into Side Menu for Smaller Screens
 const sideBar = document.querySelector(".side-nav");
