@@ -463,11 +463,25 @@ select:focus-within {
     flex-direction: column;
 }
 
+
 .video-content {
     display: flex;
     justify-content: center;
     padding: 1rem;
-}
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 80%;
+  }
+  
+  .video-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+  }
 
 
 /* Adjustments for Screen Responsive Design*/
