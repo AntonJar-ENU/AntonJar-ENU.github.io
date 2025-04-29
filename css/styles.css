@@ -357,6 +357,7 @@ textarea {
     padding: 16px 16px;
     border-radius: 10px;
     height: 100px;
+    resize: none;
 }
 
 select {
@@ -460,9 +461,14 @@ select:focus-within {
     max-width:600px;
     display: flex;
     flex-direction: column;
-
-
 }
+
+.video-content {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
 
 /* Adjustments for Screen Responsive Design*/
 @media all and (max-width: 800px) {
@@ -503,6 +509,7 @@ select:focus-within {
 }
 
 }
+
 
 /* Adjustments for Table Responsive Design */
 @media all and (max-width: 700px) {
