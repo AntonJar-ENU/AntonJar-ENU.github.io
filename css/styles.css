@@ -87,7 +87,7 @@
 
 .side-nav a:hover{
     background-color: darkgrey;
-    color:#3478f6;;
+    color:#3478f6;
 }
 
 /* FOOTER */
@@ -363,7 +363,7 @@ input {
 
 input:focus-within{
     outline:none;
-    background-color: antiquewhite;
+    background-color: #64aaff59;
 }
 
 textarea {
