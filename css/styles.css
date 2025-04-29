@@ -59,7 +59,7 @@
     right:-250px;
     width: 250px;
     height: 100vh;
-    background-color: rgba(197, 196, 196, 0.233);
+    background-color: rgba(255, 255, 255, 0.767);
     backdrop-filter: blur(5px);
     font-size: 1.2em;
     transition: right 0.3s ease;
@@ -87,17 +87,20 @@
 
 .side-nav a:hover{
     background-color: darkgrey;
-    color:black;
+    color:#3478f6;;
 }
 
 /* FOOTER */
 .footer {
     width: 100%;
     background-color: #333;
-    color: white;
     text-align: center;
     padding: 15px 0;
     margin-top: 20px;
+}
+
+.footer-text {
+    color: white;
 }
 
 /* BODY */
@@ -109,11 +112,22 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 400px;
+    background-color: #f9f9f9;
 
+}
+
+a{
+    color: 	#3478f6;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #64aaff;
 }
 
 p {
     padding: 1rem;
+    color:#333333;
 }
 
 h1{
@@ -121,11 +135,20 @@ h1{
     padding-left: 1rem;
     font-size: 2rem;
     padding: 2rem;
+    color: #3478f6;
 }
 
 h2 {
     padding-left: 1rem;
     font-size: 1.5rem;
+    color: #3478f6;
+}
+
+/*Highlight Section Titles*/
+h3 {
+    color:white;
+    font-size: 2rem;
+    
 }
 
 article {
@@ -201,18 +224,59 @@ audio {
 
 }
 
-.highlight-content:nth-of-type(1) {
+.highlight-link {
+    flex:1;
+    min-width: 30%;
+    min-height:300px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* highlight effect on highlight boxes*/
+.highlight-link:hover .highlight-content {
+    border:#3478f6 5px solid;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+}
+
+.highlight-link:hover .highlight-content >h3 {
+    font-size: 3.5rem;
+    transition:0.5s;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Background Images of Highlights Sections*/
+.highlight-link:nth-of-type(1) .highlight-content {
     background-image: url('../images/content/events-image.jpg');
 }
 
-.highlight-content:nth-of-type(2) {
+.highlight-link:nth-of-type(2) .highlight-content {
     background-image: url('../images/content/classes-image.jpg');
 }
 
-.highlight-content:nth-of-type(3) {
-    background-image: url('../images/content/events-image.jpg');
+.highlight-link:nth-of-type(3) .highlight-content {
+    background-image: url('../images/content/learn-image.jpg');
 }
 
+
+/*Event Page - Containers for iFrame elements*/
+
+/* .responsive-iframe {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+} */
 
 /* Event Calendar Image*/
 
@@ -235,36 +299,45 @@ audio {
 
 }
 
+
+
 /* Table Styling*/
 table {
     width:100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
-th, caption {
+th {
     text-align: left;
+    background-color: #3478f6;
+    color: #ffffff;
+    padding: 12px;
 }
 
 caption {
     font-size:1.1rem;
     font-weight:bold;
     text-transform:uppercase;
-    padding-top: 1rem;
-    padding-bottom:1rem;
-    background-color: #748ad3;
 }
 
-th{
-    padding:.2rem;
-    font-size:.8rem;
-    background-color: aliceblue;
+tr:hover {
+    background-color: #dbe9ff;
 }
 
 td {
-    padding: .2rem;
-    border-bottom: 1px solid rgb(153, 153, 155);
+    padding: 12px;
+    border-bottom: 1px solid #dddddd;
+    color: #333333;
 }
 
+.table-note {
+    text-align: center;
+    color:	#1c2c58;
+    font-style: italic;
 
+}
 /* CONTACT US STYLING*/
 
 form {
@@ -444,12 +517,17 @@ textarea:focus-within{
         grid-template-columns: 10ch auto;
     }
 
-    td:last-child{padding-bottom:1rem;}
+    td:last-child{
+        padding-bottom:2rem;
+        border-bottom: black solid 2px;
+    }
 
     /*Apply a label before the Content of Cell when collapsed*/
     td::before {
         font-weight: bold;
         text-transform: capitalize;
+        color: #3478f6;
+
     }
 
     td:nth-of-type(1)::before {
