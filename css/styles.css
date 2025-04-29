@@ -345,6 +345,7 @@ input {
     border-radius: 10px;
 }
 
+
 input:focus-within{
     outline:none;
     background-color: #64aaff59;
@@ -358,11 +359,18 @@ textarea {
     height: 100px;
 }
 
-textarea:focus-within{
-    outline:none;
-    background-color: antiquewhite;
+select {
+    width: 70%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
+select:focus-within {
+    outline:none;
+    background-color: #64aaff59;
+}
 
 .submit-button {
     background-color: purple;

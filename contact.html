@@ -32,16 +32,25 @@
 
         <form id="contact-form"  action="https://formspree.io/f/xrbqgndo" method="POST">
             <div class="input-box" id="form-row">
-                <input type="text" class="input-text" name="name" placeholder="Enter your name" id="name" required> 
+                <input type="text" class="input-text" name="name" placeholder="Full Name" id="name" required> 
             </div>
 
             <div class="input-box" id="form-row">
-                <input type="text" class="input-text" name="email" placeholder="Enter email" id="email1" required>
+                <input type="text" class="input-text" name="email" placeholder="Email Address" id="email1" required>
             </div>
 
             <div class="input-box" id="form-row">
-                <input type="text" class="input-text" name="confirm" placeholder="confirm" id="verify" 
+                <input type="text" class="input-text" name="confirm" placeholder="Confirm" id="verify" 
                 title="Please confirm your email address" required>
+            </div>
+
+            <div class="input-box" id="form-row">
+                <select class="combo-box" name="question-type" id="question-type" required>
+                    <option value="none"> -- Select an question type --</option>
+                    <option value="Class Inquiry"> Class Inquiry</option>
+                    <option value="Event Inquiry"> Event Inquiry</option>
+                    <option value="General Inquiry"> General Inquiry</option>
+                </select>  
             </div>
 
             <div class="input-text" id="form-row">
