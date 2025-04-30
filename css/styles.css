@@ -298,7 +298,11 @@ audio {
     width:100%;
 }
 
+.event-calendar-image {
 
+    height: auto;
+    width:100%;
+}
 
 /* Table Styling*/
 table {
