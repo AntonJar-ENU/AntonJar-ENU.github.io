@@ -26,48 +26,66 @@
 
     <!--Main Content of Page-->
     <main class="content">
-
+        <div class="contact-all">
         <h1>Contact Us</h1>
         <p>Our team will get back to you as soon as we can with your enquiry.</p>
-       
+        <div class="contact-wrapper">
             <div class="contact-info">
-                <p>Email | info@euphorialda.com </p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" 
+                    fill="#3A73F9">
+                    <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v53q0 56-39.34 94.5Q801.31-294 744-294q-36.08 0-68.04-17.5Q644-329 627-361q-26 34-65.08 50.5Q522.83-294 480-294q-77.61 0-132.3-54Q293-402 293-480.01q0-78.02 54.7-133Q402.39-668 480-668q77.6 0 132.3 54.99Q667-558.02 667-480v53q0 30.61 22.5 51.81Q712-354 743.5-354t54-21.19Q820-396.39 820-427v-53q0-142.38-98.81-241.19T480-820q-142.37 0-241.19 98.81Q140-622.38 140-480q0 142.37 98.81 241.19Q337.63-140 480-140h214v60H480Zm.06-274Q533-354 570-390.75T607-480q0-54-37.06-91t-90-37Q427-608 390-571t-37 91q0 52.5 37.06 89.25t90 36.75Z"/>
+                </svg>
+                <p class="contact-text">info@euphorialda.com </p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" 
+                    fill="#3A73F9">
+                    <path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/>
+                </svg>
+                <p class="contact-text">1-(784)-123-4567 </p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" 
+                    fill="#3A73F9">
+                    <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                </svg>
+                <p class="contact-text">Lions Center <br> P.O. Box 346, <br> Frenches Gate, Kingstown</p>
             </div>
             
+            <div class="contact-form-wrapper">
+                <form id="contact-form"  action="https://formspree.io/f/xrbqgndo" method="POST">
+                    <div class="input-box" id="form-row">
+                        <input type="text" class="input-text" name="name" placeholder="Full Name" id="name" required> 
+                    </div>
 
-            <form id="contact-form"  action="https://formspree.io/f/xrbqgndo" method="POST">
-                <div class="input-box" id="form-row">
-                    <input type="text" class="input-text" name="name" placeholder="Full Name" id="name" required> 
-                </div>
+                    <div class="input-box" id="form-row">
+                        <input type="text" class="input-text" name="email" placeholder="Email Address" id="email1" required>
+                    </div>
 
-                <div class="input-box" id="form-row">
-                    <input type="text" class="input-text" name="email" placeholder="Email Address" id="email1" required>
-                </div>
+                    <div class="input-box" id="form-row">
+                        <input type="text" class="input-text" name="confirm" placeholder="Confirm" id="verify" 
+                        title="Please confirm your email address" required>
+                    </div>
 
-                <div class="input-box" id="form-row">
-                    <input type="text" class="input-text" name="confirm" placeholder="Confirm" id="verify" 
-                    title="Please confirm your email address" required>
-                </div>
+                    <div class="input-box" id="form-row">
+                        <select class="combo-box" name="question-type" id="question-type" required>
+                            <option value="none"> -- Inquiry Type --</option>
+                            <option value="Class Inquiry"> Class Inquiry</option>
+                            <option value="Event Inquiry"> Event Inquiry</option>
+                            <option value="General Inquiry"> General Inquiry</option>
+                        </select>  
+                    </div>
 
-                <div class="input-box" id="form-row">
-                    <select class="combo-box" name="question-type" id="question-type" required>
-                        <option value="none"> -- Select an question type --</option>
-                        <option value="Class Inquiry"> Class Inquiry</option>
-                        <option value="Event Inquiry"> Event Inquiry</option>
-                        <option value="General Inquiry"> General Inquiry</option>
-                    </select>  
-                </div>
+                    <div class="input-text" id="form-row">
+                        <textarea name="user-question" id="userQuestion" 
+                            placeholder="Enter your question?" required autocomplete="off"></textarea>
+                    </div>
 
-                <div class="input-text" id="form-row">
-                    <textarea name="user-question" id="userQuestion" 
-                        placeholder="Enter your question?" required autocomplete="off"></textarea>
-                </div>
-
-                <div id="form-row">
-                    <button type="submit" class="submit-button">Send Message</button>
-                </div>
-            </form>
-        
+                    <div id="form-row">
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <!-- Populated by footer.js-->

@@ -343,15 +343,33 @@ td {
 
 .contact-wrapper {
     display: flex;
+    width: 90%;
+    align-items: center;
+    
 }
+
+.contact-form-wrapper {
+    width: 70%;
+}
+
 .contact-info {
     text-align: center;
+    width: 30%;
+}
+
+.contact-text {
+    font-size: .9rem;
+    padding:0px;
+    padding-bottom:2rem;
+    color:#043ba1
 }
 
 form {
     padding: 20px;
 
 }
+
+
 
 #form-row{
     display:flex;
@@ -362,7 +380,7 @@ form {
 
 
 input {
-    width: 70%;
+    width: 100%;
     font-size: 20px;
     padding: 16px 16px;
     border: 1px solid gray;
@@ -376,7 +394,7 @@ input:focus-within{
 }
 
 textarea {
-    width: 70%;
+    width: 100%;
     font-size: 15px;
     padding: 16px 16px;
     border-radius: 10px;
@@ -384,12 +402,18 @@ textarea {
     resize: none;
 }
 
+textarea:focus-within {
+    outline:none;
+    background-color: #64aaff59;
+}
+
 select {
-    width: 70%;
+    width: 100%;
     font-size: 20px;
     padding: 16px 16px;
     border: 1px solid gray;
     border-radius: 10px;
+   
 }
 
 select:focus-within {
@@ -547,6 +571,7 @@ select:focus-within {
     margin: 20px 0;
 }
 
+
 }
 
 
@@ -586,5 +611,29 @@ select:focus-within {
         content: "details: ";
     }
 
+    .contact-wrapper {
+        flex-direction: column;
+        
+    }
+    
+    textarea, select, input {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 10px;
+        
+    }
+
+    .contact-text {
+        font-size: 1rem;
+        width: 100%;
+        padding-bottom:2rem;
+        
+    }
+
+    .contact-info {
+        width: 100%;
+   
+
+    }
 
 }
