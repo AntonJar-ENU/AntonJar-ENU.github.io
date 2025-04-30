@@ -172,6 +172,20 @@ audio {
     padding-left: 40px;
 }
 
+.body-list {
+    list-style-position: outside;
+  padding-left: 2em;
+
+}
+
+.body-list li {
+    margin-left: 0.5em;
+}
+
+.body-list li::marker {
+    content: counter(list-item) ".\00a0\00a0";
+}
+
 /*HOME PAGE STYLING*/
 .home-feature {
     display: flex;

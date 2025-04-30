@@ -78,6 +78,7 @@ function getMenuItems() {
         {text: "Classes", link: "classes.html"},
         {text: "Learn", link: "learn.html"},
         {text: "Fees", link: "fees.html"},
+        {text: "About", link: "about.html"},
         {text: "Contact", link: "contact.html"}
     ]
 }
